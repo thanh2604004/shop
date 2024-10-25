@@ -1,0 +1,124 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Product navigation styles */
+.product-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.product-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.product-nav ul li {
+    margin-right: 20px;
+}
+
+.product-nav ul li a {
+    color: white; /* Chỉnh lại màu để phù hợp với nền */
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.product-nav ul li a.active {
+    border-bottom: 2px solid white; /* Đánh dấu active */
+}
+
+/* Product display styles */
+.product-display {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.product-card {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 22%; /* Điều chỉnh width để vừa vặn theo hàng */
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-card .buy-btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card .buy-btn:hover {
+    background-color: #e03c00;
+}
+
+/* Hiệu ứng hover cho thẻ sản phẩm */
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.product-card img {
+    width: 100%; /* Đảm bảo ảnh rộng bằng với thẻ chứa */
+    height: 200px; /* Đặt chiều cao cố định cho ảnh */
+    object-fit: cover; /* Cắt ảnh vừa với khung, giữ tỷ lệ ảnh */
+    border-radius: 10px;
+}
